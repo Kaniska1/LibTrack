@@ -12,7 +12,7 @@ export default function Header({ totalBooks, borrowedBooks }) {
           </div>
           <div>
             <h1 className="text-xl font-semibold tracking-tight text-foreground">
-              LibraTrack
+              LibTrack
             </h1>
             <p className="text-xs text-muted-foreground">
               Library Management System

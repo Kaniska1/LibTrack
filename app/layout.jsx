@@ -6,7 +6,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "LibraTrack - Library Management",
+  title: "LibTrack - Library Management",
   description:
     "A simple and elegant library management system to track your books.",
 };

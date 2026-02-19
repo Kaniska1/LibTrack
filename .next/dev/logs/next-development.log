@@ -1,0 +1,103 @@
+[00:00:01.598] Server  LOG     ✓ Ready in 1137ms
+[00:00:06.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.490] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.jsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                <Home params={Promise} searchParams={Promise}>
+                  <div className="min-h-scre...">
+                    <Header>
+                    <main className="mx-auto ma...">
+                      <div className="mb-8 grid ...">
+                        <div className="flex flex-...">
+                          <SearchBar value="" onChange={function bound dispatchSetState}>
+                            <div className="relative">
+                              <Search>
+                              <input
+                                type="text"
+                                placeholder="Search by title or author..."
+                                value=""
+                                onChange={function onChange}
+                                className="h-10 w-full rounded-lg border border-border bg-secondary pl-10 pr-10 text-s..."
+-                               fdprocessedid="jhe6d"
+                              >
+                          <div className="flex items...">
+                            <FilterTabs active="all" onChange={function bound dispatchSetState}>
+                              <div className="flex gap-1...">
+                                <button
+                                  onClick={function onClick}
+                                  className="rounded-md px-3 py-1.5 text-xs font-medium transition-colors bg-card text..."
+-                                 fdprocessedid="opoxqt"
+                                >
++                                 All Books
+                                <button
+                                  onClick={function onClick}
+                                  className="rounded-md px-3 py-1.5 text-xs font-medium transition-colors text-muted-f..."
+-                                 fdprocessedid="isz3eq"
+                                >
++                                 Available
+                                <button
+                                  onClick={function onClick}
+                                  className="rounded-md px-3 py-1.5 text-xs font-medium transition-colors text-muted-f..."
+-                                 fdprocessedid="fwuxu"
+                                >
++                                 Borrowed
+                                <button
+                                  onClick={function onClick}
+                                  className="rounded-md px-3 py-1.5 text-xs font-medium transition-colors text-muted-f..."
+-                                 fdprocessedid="iw179l"
+                                >
++                                 Borrowers
+                            ...
+                        <AddBookForm onBookAdded={function Home.useCallback[handleRefresh]}>
+                          <form onSubmit={function handleSubmit} className="rounded-xl...">
+                            <h2>
+                            <div className="flex flex-...">
+                              <input
+                                type="text"
+                                placeholder="Book title"
+                                value=""
+                                onChange={function onChange}
+                                className="h-10 rounded-lg border border-border bg-secondary px-3 text-sm text-foregro..."
+-                               fdprocessedid="ar9xut"
+                              >
+                              <input
+                                type="text"
+                                placeholder="Author name"
+                                value=""
+                                onChange={function onChange}
+                                className="h-10 rounded-lg border border-border bg-secondary px-3 text-sm text-foregro..."
+-                               fdprocessedid="34q2v"
+                              >
+                              <button
+                                type="submit"
+                                disabled={false}
+                                className="flex h-10 items-center justify-center gap-2 rounded-lg bg-primary text-sm f..."
+-                               fdprocessedid="s74u5lj"
+                              >
+                      ...
+                    ...
+            ...
+          ...
+
+[00:01:10.925] Server  LOG     ✓ Compiled in 85ms
+[00:01:24.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:27.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:45.457] Server  LOG     ✓ Compiled in 71ms
+[00:02:21.016] Server  LOG     ✓ Compiled in 75ms
